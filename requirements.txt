@@ -1,0 +1,7 @@
+torch 
+numpy
+tiktoken
+datasets
+httpx
+beautifulsoup4
+duckduckgo-search

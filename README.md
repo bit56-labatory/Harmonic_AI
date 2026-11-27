@@ -1,0 +1,5 @@
+HarmonicLM (harmonic_ai) is a 242.3-million-parameter recursive language model engineered from scratch in PyTorch. Unlike fixed-depth transformers that spend identical compute on every token, HarmonicLM uses 16 recurrent blocks with adaptive pondering loops, Multi-Head Fibonacci sparse mixing, and Golden-Ratio (1/φ) scale-invariant residual damping to dynamically allocate extra reasoning depth to complex sequences.
+The repository includes the complete end-to-end training and local deployment stack:
+• Foundation Pre-Training (training/train_harmonic.py): Multi-GPU DDP training pipeline with gradient checkpointing and streaming corpus tokenization (data/prepare_universal_genome.py).
+• Post-Training Alignment (training/build_sovereign_sft.py & training/train_grpo.py): Structured reasoning (<|think|>) SFT paired with Group Relative Policy Optimization (GRPO) verified against mathematical, Python execution, and shell syntax rewards.
+• Sovereign Terminal Agent (cli/hm.py): Lightweight cross-platform CLI (hm) that runs offline on Windows PowerShell, Linux Bash, and macOS Zsh with live token streaming and human-in-the-loop command execution.

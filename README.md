@@ -69,7 +69,7 @@ harmonic_ai/
 ### Shell Setup
 * **Windows PowerShell (`$PROFILE`):**
   ```powershell
-  function hm { & "C:\Users\emanu\harmonic_ai\venv\Scripts\python.exe" "C:\Users\emanu\harmonic_ai\cli\hm.py" @args }
+  function hm { & "C:\Users\Profile\Dir\harmonic_ai\venv\Scripts\python.exe" "C:\Users\Profile\Dir\harmonic_ai\cli\hm.py" @args }
   ```
 * **Linux (`~/.bashrc`):**
   ```bash
